@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: Inter, sans-serif;
+  --font-playfair-display: "Playfair Display", serif;
+
+  /* Cafe Color Palette */
+  --color-cafe-50: #fdf8f6;
+  --color-cafe-100: #f2e8e5;
+  --color-cafe-200: #eaddd7;
+  --color-cafe-300: #e0cec7;
+  --color-cafe-400: #d2bab0;
+  --color-cafe-500: #bfa094;
+  --color-cafe-600: #a18072;
+  --color-cafe-700: #977669;
+  --color-cafe-800: #846358;
+  --color-cafe-800: #846358;
+  --color-cafe-900: #43302b;
+
+  /* Brand Colors */
+  --color-alonica: #A31D1D;
+  /* Deep Crimson/Maroon from Instagram */
+  --color-alonica-light: #C52323;
+  --color-alonica-dark: #7F1414;
+
+  /* Cream Colors */
+  --color-cream-100: #f5ebe0;
+
+  /* Background & Foreground */
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+
+  /* Font Families */
+  --font-family-serif: var(--font-playfair-display), serif;
+  --font-family-sans: var(--font-inter), sans-serif;
+  --font-family-script: var(--font-sacramento), cursive;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-family: var(--font-family-sans);
+}
