@@ -34,12 +34,12 @@ export const HeroParallax = ({
     const rotateX = useTransform(scrollYProgress, [0, 0.2], [15, 0]);
     const opacity = useTransform(scrollYProgress, [0, 0.2], [0.2, 1]);
     const rotateZ = useTransform(scrollYProgress, [0, 0.2], [20, 0]);
-    const translateY = useTransform(scrollYProgress, [0, 0.2], [-700, 500]);
+    const translateY = useTransform(scrollYProgress, [0, 0.2], [-300, 300]);
 
     return (
         <div
             ref={ref}
-            className="h-[250vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className="h-[180vh] py-20 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -85,11 +85,11 @@ export const HeroParallax = ({
 
 export const Header = () => {
     return (
-        <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 z-10">
-            <h1 className="text-2xl md:text-7xl font-bold dark:text-white font-serif mb-4 text-black">
+        <div className="max-w-7xl relative mx-auto py-10 md:py-20 px-4 w-full  left-0 top-0 z-50 flex flex-col items-center text-center">
+            <h1 className="text-2xl md:text-7xl font-bold font-serif mb-4 text-cafe-900">
                 The Art of <br /> <span className="text-[#A31D1D]">Coffee</span>
             </h1>
-            <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-neutral-600 font-light">
+            <p className="max-w-2xl mx-auto text-base md:text-xl mt-8 text-cafe-600 font-light">
                 We build beautiful products with the latest technologies and frameworks.
                 We are a team of passionate developers and designers that love to build
                 amazing products.

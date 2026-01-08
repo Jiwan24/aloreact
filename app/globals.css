@@ -5,17 +5,17 @@
   --font-playfair-display: "Playfair Display", serif;
 
   /* Cafe Color Palette */
-  --color-cafe-50: #fdf8f6;
-  --color-cafe-100: #f2e8e5;
-  --color-cafe-200: #eaddd7;
-  --color-cafe-300: #e0cec7;
-  --color-cafe-400: #d2bab0;
-  --color-cafe-500: #bfa094;
-  --color-cafe-600: #a18072;
-  --color-cafe-700: #977669;
-  --color-cafe-800: #846358;
-  --color-cafe-800: #846358;
-  --color-cafe-900: #43302b;
+  /* Cafe Color Palette (Now Alonica Red) */
+  --color-cafe-50: #fdf5f5;
+  --color-cafe-100: #fae3e3;
+  --color-cafe-200: #f2baba;
+  --color-cafe-300: #e48282;
+  --color-cafe-400: #cf4b4b;
+  --color-cafe-500: #A31D1D;
+  --color-cafe-600: #C52323;
+  --color-cafe-700: #9a1818;
+  --color-cafe-800: #7F1414;
+  --color-cafe-900: #4a0d0d;
 
   /* Brand Colors */
   --color-alonica: #A31D1D;
