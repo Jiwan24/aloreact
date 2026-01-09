@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Coffee, Facebook, Instagram, Twitter, ArrowRight, Mail } from 'lucide-react';
 import { Button } from './ui/Button';
@@ -10,10 +11,14 @@ export function Footer() {
                 {/* Brand Column */}
                 <div className="space-y-6">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="bg-cafe-800 p-2 rounded-full group-hover:bg-cafe-700 transition-colors">
-                            <Coffee className="w-6 h-6 text-cafe-300" />
-                        </div>
-                        <span className="text-4xl font-[family-name:var(--font-sacramento)] font-bold text-white tracking-tight">Alonica Cafe</span>
+                        <Image
+                            src="/images/logo.png"
+                            alt="Alonica Cafe"
+                            width={180}
+                            height={60}
+                            className="h-12 w-auto object-contain rounded-full"
+                            unoptimized
+                        />
                     </Link>
                     <p className="text-cafe-300 leading-relaxed text-sm pr-4">
                         Experience the art of coffee in a premium, cozy atmosphere.

@@ -16,6 +16,11 @@ export function Navbar() {
             icon: <Coffee className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
+            name: "Gallery",
+            link: "/gallery",
+            icon: <Image className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        },
+        {
             name: "About",
             link: "/about",
             icon: <Info className="h-4 w-4 text-neutral-500 dark:text-white" />,

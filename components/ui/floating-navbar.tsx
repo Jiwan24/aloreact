@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { Coffee } from "lucide-react";
 
 export const FloatingNav = ({
@@ -68,10 +69,14 @@ export const FloatingNav = ({
                 }}
             >
                 <Link href="/" className="mr-2 md:mr-4 flex items-center gap-2">
-                    <div className="bg-cafe-900 p-1.5 rounded-full">
-                        <Coffee className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="font-[family-name:var(--font-sacramento)] font-bold text-3xl text-cafe-900 hidden sm:block">Alonica</span>
+                    <Image
+                        src="/images/logo.png"
+                        alt="Alonica Cafe"
+                        width={120}
+                        height={40}
+                        className="h-8 md:h-10 w-auto object-contain rounded-full"
+                        unoptimized
+                    />
                 </Link>
 
                 {navItems.map((navItem: any, idx: number) => (
